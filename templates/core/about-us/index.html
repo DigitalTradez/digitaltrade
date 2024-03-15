@@ -1,0 +1,1401 @@
+{% load static %}
+<!doctype html>
+<html lang="en-US">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+
+	<style>
+		.ui-link-helper svg {
+			width: 22px;
+		}
+
+		.ui-link-helper {
+			position: fixed;
+			right: 0;
+			top: calc(50vh - 111px);
+			display: flex;
+			flex-direction: column;
+			background: white;
+			width: 45px;
+			cursor: pointer;
+			border-left: 0;
+			border-radius: 0;
+			-webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+			-moz-box-shadow: 0 5px 40px rgba(0, 0, 0, 7%);
+			box-shadow: 0 5px 40px rgb(0 0 0 / 7%);
+			padding: 0;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border: 1px solid #eaeaea;
+			border-right: 0;
+			z-index: 9999999;
+		}
+
+		.ui-link-helper .ui-tooltip {
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transform: scale(.7);
+			-moz-transform: scale(.7);
+			-ms-transform: scale(.7);
+			transform: scale(.7);
+			position: absolute;
+			background-color: #fff;
+			font-size: 13px;
+			margin: 0;
+			padding: 0px 20px;
+			font-family: inherit;
+			width: auto;
+			font-weight: 500;
+			line-height: 36px;
+			letter-spacing: .1px;
+			right: 10px;
+			top: 4px;
+			border-radius: 3px;
+			white-space: nowrap;
+			-webkit-box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+			-moz-box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+			box-shadow: 0 5px 40px rgb(0 0 0 / 7%), 0 0 3px -1px rgb(83 45 245 / 15%);
+			-moz-transition: all .3s cubic-bezier(0.64, -0.09, 0.13, 1.15);
+			-o-transition: all .3s cubic-bezier(0.64, -0.09, 0.13, 1.15);
+			transition: all .3s cubic-bezier(0.64, -0.09, 0.13, 1.15);
+			color: #794AFF;
+		}
+
+		.ui-link-helper .ui-tooltip-link:hover .ui-tooltip {
+			opacity: 1;
+			right: 60px;
+			visibility: visible;
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+		}
+
+		.ui-link-helper .ui-tooltip-link {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			height: 44px;
+			align-items: center;
+			transition: all .3s ease-in;
+		}
+
+		.ui-link-helper .ui-tooltip span {
+			display: block;
+			position: absolute;
+			right: -5px;
+			top: 12px;
+			width: 0;
+			height: 0;
+			border-left: 5px solid #fff;
+			border-bottom: 5px solid transparent;
+			border-top: 5px solid transparent;
+		}
+
+		.ui-link-helper .ui-tooltip-link+.ui-tooltip-link {
+			border-top: 1px solid #eaeaea;
+		}
+
+		.ui-link-helper .ui-tooltip-link svg {
+			height: 20px;
+		}
+
+		.ui-tooltip-link:hover {
+			background: rgb(83 45 245 / 5%);
+		}
+
+		.ui-tooltip-link:hover svg path {
+			fill: #794AFF;
+		}
+
+		@media(max-width: 767px) {
+			.ui-link-helper {
+				display: none;
+			}
+		}
+	</style>
+	<title>About Us &#8211; DigitalTradez</title>
+	<meta name="robots" content="max-image-preview:large" />
+	<link rel="alternate" type="application/rss+xml" title="SaaS &raquo; Feed" href="../feed/index.html" />
+	<link rel="alternate" type="application/rss+xml" title="SaaS &raquo; Comments Feed"
+		href="../comments/feed/index.html" />
+	<script>
+		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/outgrid.uicore.co\/saas\/wp-includes\/js\/wp-emoji-release.min.js" } };
+		/*! This file is auto-generated */
+		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+	</script>
+	<link rel="stylesheet" id="bdt-uikit-css"
+		href="{% static "wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikitf14a.css" %}" media="all" />
+	<link rel="stylesheet" id="ep-helper-css"
+		href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/ep-helperca3f.css' %}" media="all" />
+	<style id="wp-emoji-styles-inline-css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<style id="classic-theme-styles-inline-css">
+		/*! This file is auto-generated */
+		.wp-block-button__link {
+			color: #fff;
+			background-color: #32373c;
+			border-radius: 9999px;
+			box-shadow: none;
+			text-decoration: none;
+			padding: calc(.667em + 2px) calc(1.333em + 2px);
+			font-size: 1.125em
+		}
+
+		.wp-block-file__button {
+			background: #32373c;
+			color: #fff;
+			text-decoration: none
+		}
+	</style>
+	<link rel="stylesheet" id="text-editor-style-css"
+		href="{% static "wp-content/plugins/metform/public/assets/css/text-editorcd70.css" %}" media="all" />
+	<link rel="stylesheet" id="metform-pro-style-css"
+		href="{% static "wp-content/plugins/metform-pro/public/assets/css/style.min9e95.css" %}" media="all" />
+	<link rel="stylesheet" id="elementor-frontend-css"
+		href="{% static 'wp-content/plugins/elementor/assets/css/frontend-lite.min225e.css' %}" media="all" />
+	<link rel="stylesheet" id="elementor-post-214-css"
+		href="{% static "wp-content/uploads/sites/7/elementor/css/post-21460e5.css" %}" media="all" />
+	<link rel="stylesheet" id="font-awesome-5-all-css"
+		href="{% static 'wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min225e.css' %}" media="all" />
+	<link rel="stylesheet" id="font-awesome-4-shim-css"
+		href="{% static 'wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min225e.css' %}" media="all" />
+	<link rel="stylesheet" id="elementor-post-57-css"
+		href="{% static "wp-content/uploads/sites/7/elementor/css/post-5760e5.css" %}" media="all" />
+	<link rel="stylesheet" id="elementor-icons-css"
+		href="{% static "wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min50c3.css" %}" media="all" />
+	<link rel="stylesheet" id="swiper-css"
+		href="{% static "wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css" %}" media="all" />
+	<link rel="stylesheet" id="elementor-post-68-css"
+		href="{% static "wp-content/uploads/sites/7/elementor/css/post-6822a6.css" %}" media="all" />
+	<link rel="stylesheet" id="uicore_global-css" href="{% static "wp-content/uploads/sites/7/uicore-globald5fa.css" %}"
+		media="all" />
+	<link rel="stylesheet" id="google-fonts-1-css"
+		href="https://fonts.googleapis.com/css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.4.3"
+		media="all" />
+	<link rel="stylesheet" id="elementor-icons-shared-0-css"
+		href="{% static "wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min52d5.css" %}"
+		media="all" />
+	<link rel="stylesheet" id="elementor-icons-fa-solid-css"
+		href="{% static "wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min52d5.css" %}" media="all" />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<script src="{% static 'wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min225e.js' %}"
+		id="font-awesome-4-shim-js"></script>
+	<script src="{% static 'wp-includes/js/jquery/jquery.minf43b.js' %}" id="jquery-core-js"></script>
+	<script src="{% static 'wp-includes/js/jquery/jquery-migrate.min5589.js' %}" id="jquery-migrate-js"></script>
+	<link rel="https://api.w.org/" href="../wp-json/index.html" />
+	<link rel="alternate" type="application/json" href="../wp-json/wp/v2/pages/68.json" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
+	<meta name="generator" content="WordPress 6.4.3" />
+	<link rel="canonical" href="index.html" />
+	<link rel="shortlink" href="../index7ef4.html" />
+	<link rel="alternate" type="application/json+oembed"
+		href="../wp-json/oembed/1.0/embed62bd.json?url=https%3A%2F%2Foutgrid.uicore.co%2Fsaas%2Fabout-us%2F" />
+	<link rel="alternate" type="text/xml+oembed"
+		href="../wp-json/oembed/1.0/embed401f?url=https%3A%2F%2Foutgrid.uicore.co%2Fsaas%2Fabout-us%2F&amp;format=xml" />
+	
+	<meta name="theme-color" content="#11834F" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon.png" %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}">
+	<link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+ <link rel="shortcut icon" href="{% static 'favicon/favicon-32x32.png' %}">
+ <link href="{% static "favicon/favicon.ico" %}" rel="icon">
+</head>
+
+<body
+	class="page-template-default page page-id-68 wp-embed-responsive ui-a-dsmm-slide  elementor-default elementor-kit-4 elementor-page elementor-page-68">
+	<div class="uicore-body-content">
+		<div id="uicore-page">
+			<div data-uils="header" data-uils-title="Header" id="wrapper-navbar" itemscope
+				itemtype="http://schema.org/WebSite"
+				class="uicore uicore-navbar elementor-section elementor-section-boxed uicore-h-classic uicore-sticky ui-smart-sticky uicore-transparent ">
+				<div class="uicore-header-wrapper">
+					<nav class="uicore elementor-container">
+						<div class="uicore-branding" data-uils="header-branding" data-uils-title="Site Logo">
+							<a href="/" rel="home">
+								<img class="uicore uicore-logo uicore-main"
+									src="{% static 'logo/logo-2.png' %}" alt="SaaS" />
+								<img class="uicore uicore-logo uicore-second"
+									src="{% static 'logo/logo-2.png' %}" alt="SaaS" />
+								<img class="uicore uicore-logo uicore-mobile-main"
+									src="{% static 'logo/logo-2.png' %}" alt="SaaS" />
+								<img class="uicore uicore-logo uicore-mobile-second"
+									src="{% static 'logo/logo-2.png' %}" alt="SaaS" />
+							</a>
+						</div>
+						<div class="uicore-nav-menu">
+							<div class="uicore-menu-container uicore-nav">
+								<ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-130">
+										<a href="/"><span class="ui-menu-item-wrapper">Home</span></a></li>
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-68 current_page_item menu-item-132">
+										<a href="{% url "core:about" %}" aria-current="page"><span
+												class="ui-menu-item-wrapper">About Us</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133">
+										<a href="{% url "core:faq" %}"><span
+												class="ui-menu-item-wrapper">Faq's</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+										<a href="{% url "core:contact" %}"><span class="ui-menu-item-wrapper">Contact
+												Us</span></a></li>
+								</ul>
+							</div>
+							<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
+								<div class="uicore-custom-area ">
+									
+									<div class="uicore-hca">
+										<p><span class="uicore-icon-wrapp"><i class="uicore-i-shield"
+													style="font-size:100%; color:inherit; padding-left:20px; padding-right:10px;"></i><a
+													href="{% url "userauths:sign-in" %}">Log in</a></span></p>
+									</div>
+								</div>
+								<div class="uicore-cta-wrapper">
+									<a href="{% url "userauths:sign-up" %}" target="_self" class="uicore-btn ">
+										<span class="elementor-button-text">
+											Sign Up </span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="uicore-mobile-head-right"> <button type="button" class="uicore-toggle uicore-ham"
+								aria-label="mobile-menu">
+								<span class="bars">
+									<span class="bar"></span>
+									<span class="bar"></span>
+									<span class="bar"></span>
+								</span>
+							</button>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div id="content" class="uicore-content">
+				<script id="uicore-page-transition">window.onload = window.onpageshow = function () { }; </script>
+				<div id="primary" class="content-area">
+					<article id="post-68" class="post-68 page type-page status-publish hentry">
+						<main class="entry-content">
+							<div data-elementor-type="wp-page" data-elementor-id="68" class="elementor elementor-68">
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-540527b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="540527b" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-caf2159"
+											data-id="caf2159" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-420bddb elementor-widget elementor-widget-heading"
+													data-id="420bddb" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<style>
+															
+															.elementor-heading-title {
+																padding: 0;
+																margin: 0;
+																line-height: 1
+															}
+
+															.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+																color: inherit;
+																font-size: inherit;
+																line-height: inherit
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+																font-size: 15px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+																font-size: 19px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+																font-size: 29px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+																font-size: 39px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+																font-size: 59px
+															}
+														</style>
+														<h1 class="elementor-heading-title elementor-size-default">
+															Empowering Your Financial Future</h1>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-9822742 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor"
+													data-id="9822742" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.19.0 - 29-01-2024 */
+															.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+																background-color: #69727d;
+																color: #fff
+															}
+
+															.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+																color: #69727d;
+																border: 3px solid;
+																background-color: transparent
+															}
+
+															.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+																margin-top: 8px
+															}
+
+															.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+																width: 1em;
+																height: 1em
+															}
+
+															.elementor-widget-text-editor .elementor-drop-cap {
+																float: left;
+																text-align: center;
+																line-height: 1;
+																font-size: 50px
+															}
+
+															.elementor-widget-text-editor .elementor-drop-cap-letter {
+																display: inline-block
+															}
+														</style>
+														<p>Unlock the potential of digital investing with DigitalTradez, where innovation meets opportunity. Our platform offers seamless access to a diverse range of investment options, including cryptocurrencies, stocks, and commodities. </p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5711d92"
+											data-id="5711d92" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-0544433 elementor-widget elementor-widget-image"
+													data-id="0544433" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.19.0 - 29-01-2024 */
+															.elementor-widget-image {
+																text-align: center
+															}
+
+															.elementor-widget-image a {
+																display: inline-block
+															}
+
+															.elementor-widget-image a img[src$=".svg"] {
+																width: 48px
+															}
+
+															.elementor-widget-image img {
+																vertical-align: middle;
+																display: inline-block
+															}
+														</style> <img fetchpriority="high" decoding="async" width="1184"
+															height="800"
+															src="{% static 'wp-content/uploads/sites/7/2023/11/saas-about.webp' %}"
+															class="attachment-full size-full wp-image-177" alt
+															 />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-820443a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="820443a" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-no">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a1b1ea2"
+											data-id="a1b1ea2" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-ce9d201 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+													data-id="ce9d201" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">
+															Why Choose Us For Your Investment Journey.</h2>
+													</div>
+												</div>
+												<section
+													class="elementor-section elementor-inner-section elementor-element elementor-element-9de8e10 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="9de8e10" data-element_type="section">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-d445f07"
+															data-id="d445f07" data-element_type="column"
+															data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-e77e508 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="e77e508" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="https://elevatereturns.com/images/box-icon-a.png"
+																						alt="Tailored templates">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Maximum ROIs </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					We are dedicated to leveraging their expertise to maximize returns and mitigate risks on
+your behalf.</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-aecfd31"
+															data-id="aecfd31" data-element_type="column"
+															data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-9f0462a bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="9f0462a" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="https://elevatereturns.com/images/box-icon-f.png"
+																						alt="Workflows">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						24/7 Payout  </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					Your return of investments are sent instantly to your wallet whenever you initiate a
+withdrawal. </div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-3f32596"
+															data-id="3f32596" data-element_type="column"
+															data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-4104994 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="4104994" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="https://elevatereturns.com/images/box-icon-g.png"
+																						alt="Objectives">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Fortified And Secure Infastructure </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					We partner with leading DDoS protection and mitigation providers. </div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b790db3"
+															data-id="b790db3" data-element_type="column"
+															data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-50d3ba9 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="50d3ba9" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="https://elevatereturns.com/images/box-icon-h.png"
+																						alt="Actions">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Experienced forex and crypto experts. </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					we have top level and experienced forex and crypto experts.</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</section>
+												<div class="elementor-element elementor-element-67fbf63 elementor-align-justify elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-button"
+													data-id="67fbf63" data-element_type="widget"
+													data-widget_type="button.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-button-wrapper">
+															<a class="elementor-button elementor-button-link elementor-size-sm"
+																href="{% url "core:contact" %}">
+																<span class="elementor-button-content-wrapper">
+																	<span class="elementor-button-text">Contact Us</span>
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-fb8ca23 elementor-widget elementor-widget-spacer"
+													data-id="fb8ca23" data-element_type="widget"
+													data-widget_type="spacer.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.19.0 - 29-01-2024 */
+															.elementor-column .elementor-spacer-inner {
+																height: var(--spacer-size)
+															}
+
+															.e-con {
+																--container-widget-width: 100%
+															}
+
+															.e-con-inner>.elementor-widget-spacer,
+															.e-con>.elementor-widget-spacer {
+																width: var(--container-widget-width, var(--spacer-size));
+																--align-self: var(--container-widget-align-self, initial);
+																--flex-shrink: 0
+															}
+
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container {
+																height: 100%;
+																width: 100%
+															}
+
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+																height: 100%
+															}
+
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+																height: var(--container-widget-height, var(--spacer-size))
+															}
+
+															.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,
+															.e-con>.elementor-widget-spacer.elementor-widget-empty {
+																position: relative;
+																min-height: 22px;
+																min-width: 22px
+															}
+
+															.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
+															.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+																position: absolute;
+																top: 0;
+																bottom: 0;
+																left: 0;
+																right: 0;
+																margin: auto;
+																padding: 0;
+																width: 22px;
+																height: 22px
+															}
+														</style>
+														<div class="elementor-spacer">
+															<div class="elementor-spacer-inner"></div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-5cccb5d elementor-icon-list--layout-inline elementor-widget__width-auto elementor-tablet-align-center elementor-widget-tablet__width-auto elementor-widget-mobile__width-inherit elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+													data-id="5cccb5d" data-element_type="widget"
+													data-widget_type="icon-list.default">
+													<div class="elementor-widget-container">
+														<link rel="stylesheet"
+															href="{% static 'wp-content/plugins/elementor/assets/css/widget-icon-list.min.css' %}">
+														<ul class="elementor-icon-list-items elementor-inline-items">
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-crown"></i>
+																</span>
+																<span class="elementor-icon-list-text">Loved by investors</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-poll"></i>
+																</span>
+																<span class="elementor-icon-list-text">Trusted by investors</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-d15d335 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="d15d335" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2a5d89c"
+											data-id="2a5d89c" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												
+												<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+	<div class="tradingview-widget-container__widget"></div>
+	<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on DigitalTradez</span></a></div>
+	<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+	{
+	"interval": "1m",
+	"width": 600,
+	"isTransparent": false,
+	"height": 450,
+	"symbol": "COINBASE:BTCUSD",
+	"showIntervalTabs": true,
+	"displayMode": "single",
+	"locale": "en",
+	"colorTheme": "light"
+  }
+	</script>
+  </div>
+  <!-- TradingView Widget END -->
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-04cf1a6"
+											data-id="04cf1a6" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-eec0d94 elementor-widget elementor-widget-heading"
+													data-id="eec0d94" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">
+															Revolutionize your investment experience with DigitalTradez.
+														</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-eeda036 elementor-widget elementor-widget-text-editor"
+													data-id="eeda036" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>Let DigitalTradez streamline your investment journey, whether you're looking to trade cryptocurrencies, stocks, or commodities. Our platform offers automated tools to manage your portfolio, from regular rebalancing to timely notifications on market trends and investment opportunities.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="elementor-element elementor-element-b8ad39d bdt-navigation-type-both bdt-review-img--top bdt-carousel-style-carousel elementor-widget elementor-widget-bdt-review-card-carousel"
+													data-id="b8ad39d" data-element_type="widget"
+													data-widget_type="bdt-review-card-carousel.default">
+													<div class="elementor-widget-container">
+														<div id="bdt-review-card-carousel-b8ad39d"
+															class="bdt-arrows-dots-align-center bdt-review-card-carousel"
+															data-settings="{&quot;autoplay&quot;:{&quot;delay&quot;:5000},&quot;loop&quot;:true,&quot;speed&quot;:500,&quot;slidesPerView&quot;:1,&quot;slidesPerGroup&quot;:1,&quot;spaceBetween&quot;:20,&quot;effect&quot;:&quot;carousel&quot;,&quot;breakpoints&quot;:{&quot;767&quot;:{&quot;slidesPerView&quot;:3,&quot;spaceBetween&quot;:20,&quot;slidesPerGroup&quot;:1},&quot;1023&quot;:{&quot;slidesPerView&quot;:4,&quot;spaceBetween&quot;:20,&quot;slidesPerGroup&quot;:1}},&quot;navigation&quot;:{&quot;nextEl&quot;:&quot;#bdt-review-card-carousel-b8ad39d .bdt-navigation-next&quot;,&quot;prevEl&quot;:&quot;#bdt-review-card-carousel-b8ad39d .bdt-navigation-prev&quot;},&quot;pagination&quot;:{&quot;el&quot;:&quot;#bdt-review-card-carousel-b8ad39d .swiper-pagination&quot;,&quot;type&quot;:&quot;bullets&quot;,&quot;clickable&quot;:&quot;true&quot;,&quot;dynamicBullets&quot;:false},&quot;scrollbar&quot;:{&quot;el&quot;:&quot;#bdt-review-card-carousel-b8ad39d .swiper-scrollbar&quot;,&quot;hide&quot;:&quot;true&quot;},&quot;coverflowEffect&quot;:{&quot;rotate&quot;:50,&quot;stretch&quot;:0,&quot;depth&quot;:100,&quot;modifier&quot;:1,&quot;slideShadows&quot;:true}}">
+															<div class="swiper-carousel swiper">
+																<div class="swiper-wrapper">
+																	
+																	<div
+																		class="bdt-ep-review-card-carousel-item swiper-slide">
+																		<div
+																			class="bdt-ep-review-card-carousel-image bdt-image-mask">
+																			<img loading="lazy" decoding="async"
+																				width="93" height="93"
+																				src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Feature-Testimonial-Avatar-2.webp' %}"
+																				class="attachment-medium size-medium"
+																				alt="Meghan Roberts" />
+																		</div>
+																		<div
+																			class="bdt-ep-review-card-carousel-content">
+																			<h3
+																				class="bdt-ep-review-card-carousel-name">
+																				Meghan Roberts </h3>
+																			
+																			<div
+																				class="bdt-ep-review-card-carousel-text">
+																				DigitalTradez transformed my investment journey! With their user-friendly platform and expert insights, I've seen significant returns on my investments.. </div>
+																		</div>
+																	</div>
+																	
+																	<div
+																		class="bdt-ep-review-card-carousel-item swiper-slide">
+																		<div
+																			class="bdt-ep-review-card-carousel-image bdt-image-mask">
+																			<img loading="lazy" decoding="async"
+																				width="92" height="92"
+																				src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Feature-Testimonial-Avatar-3.webp' %}"
+																				class="attachment-medium size-medium"
+																				alt="Melissa Williams" />
+																		</div>
+																		<div
+																			class="bdt-ep-review-card-carousel-content">
+																			<h3
+																				class="bdt-ep-review-card-carousel-name">
+																				Melissa Williams </h3>
+																			
+																			<div
+																				class="bdt-ep-review-card-carousel-text">
+																				I'm impressed by the professionalism and transparency of DigitalTradez. Their innovative approach to investment management has exceeded my expectations. </div>
+																		</div>
+																	</div>
+																	<div
+																		class="bdt-ep-review-card-carousel-item swiper-slide">
+																		<div
+																			class="bdt-ep-review-card-carousel-image bdt-image-mask">
+																			<img loading="lazy" decoding="async"
+																				width="92" height="92"
+																				src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Feature-Testimonial-Avatar-4.webp' %}"
+																				class="attachment-medium size-medium"
+																				alt="Heidi Trivelpiece" />
+																		</div>
+																		<div
+																			class="bdt-ep-review-card-carousel-content">
+																			<h3
+																				class="bdt-ep-review-card-carousel-name">
+																				Heidi Trivelpiece </h3>
+																		
+																			<div
+																				class="bdt-ep-review-card-carousel-text">
+																				DigitalTradez is a game-changer in the world of online investing. Their cutting-edge technology and knowledgeable team have helped me achieve my financial goals. </div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="bdt-position-z-index bdt-position-center">
+																<div
+																	class="bdt-arrows-dots-container bdt-slidenav-container ">
+																	<div class="bdt-flex bdt-flex-middle">
+																		<div class="bdt-visible@m">
+																			<a href
+																				class="bdt-navigation-prev bdt-slidenav-previous bdt-icon bdt-slidenav">
+																				<i class="ep-icon-arrow-left-0"
+																					aria-hidden="true"></i>
+																			</a>
+																		</div>
+																		<div class="bdt-visible@m">
+																			<a href
+																				class="bdt-navigation-next bdt-slidenav-next bdt-icon bdt-slidenav">
+																				<i class="ep-icon-arrow-right-0"
+																					aria-hidden="true"></i>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="bdt-position-z-index bdt-position-bottom">
+																<div class="bdt-dots-container">
+																	<div class="swiper-pagination"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-f3c6ddb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="f3c6ddb" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-no">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1a1a0f7"
+											data-id="1a1a0f7" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-3c1a5fa elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+													data-id="3c1a5fa" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">At DigitalTradez, we understand that every investor is unique.
+														</h2>
+													</div>
+												</div>
+												<section
+													class="elementor-section elementor-inner-section elementor-element elementor-element-f3c4afa elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="f3c4afa" data-element_type="section">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-54ef233"
+															data-id="54ef233" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-f574a4a bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="f574a4a" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Business-Icon-1.webp' %}"
+																						alt="Designed to fit your requirements.">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Designed to fit your
+																						requirements. </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					DigitalTradez is meticulously crafted to meet your unique requirements. </div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b9ab943"
+															data-id="b9ab943" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-b77ce9f bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="b77ce9f" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Business-Icon-2.webp' %}"
+																						alt="Implemented by your managers.">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Loved by our users.
+																					</span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					<p>Join the growing community of satisfied investors who rely on DigitalTradez.</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-c1983b9"
+															data-id="c1983b9" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-3d45da9 bdt-icon-type-image elementor-position-top bdt-icon-effect-none elementor-widget elementor-widget-bdt-advanced-icon-box"
+																	data-id="3d45da9" data-element_type="widget"
+																	data-widget_type="bdt-advanced-icon-box.default">
+																	<div class="elementor-widget-container">
+																		<div class="bdt-ep-advanced-icon-box">
+																			<div class="bdt-ep-advanced-icon-box-icon">
+																				<span
+																					class="bdt-ep-advanced-icon-box-icon-wrap">
+																					<img decoding="async"
+																						src="{% static 'wp-content/uploads/sites/7/2023/06/SaaS-Business-Icon-3.webp' %}"
+																						alt="Regarded as trustworthy by staff.">
+																				</span>
+																			</div>
+																			<div
+																				class="bdt-ep-advanced-icon-box-content">
+																				<h4
+																					class="bdt-ep-advanced-icon-box-title">
+																					<span>
+																						Trusted by
+																						investors. </span>
+																				</h4>
+																				<div
+																					class="bdt-ep-advanced-icon-box-description">
+																					Our commitment to transparency, security, and client satisfaction has earned trust. </div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</main>
+					</article>
+				</div>
+			</div>
+			<footer id="uicore-tb-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+				<div data-elementor-type="uicore-tb" data-elementor-id="57" class="elementor elementor-57">
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-0059a4f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+						data-id="0059a4f" data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f6a81fc"
+								data-id="f6a81fc" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<section
+										class="elementor-section elementor-inner-section elementor-element elementor-element-8ec9def elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="8ec9def" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default">
+											<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ae2d53d"
+												data-id="ae2d53d" data-element_type="column"
+												data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-background-overlay"></div>
+													<div class="elementor-element elementor-element-589bd13 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading"
+														data-id="589bd13" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h2 class="elementor-heading-title elementor-size-default">
+																
+															Start Investing & Initiate Your Path To Financial Prosperity And Huge Returns.</h2>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-c28e8e6 elementor-tablet-align-center elementor-widget elementor-widget-button"
+														data-id="c28e8e6" data-element_type="widget"
+														data-widget_type="button.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-button-wrapper">
+																<a class="elementor-button elementor-button-link elementor-size-sm"
+																	href="#">
+																	<span class="elementor-button-content-wrapper">
+																		<span class="elementor-button-text">Talk to
+																			expert</span>
+																	</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-d154b49 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+						data-id="d154b49" data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bd74d1"
+								data-id="2bd74d1" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<section
+										class="elementor-section elementor-inner-section elementor-element elementor-element-528234a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+										data-id="528234a" data-element_type="section">
+										<div class="elementor-container elementor-column-gap-default">
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b9a7e23"
+												data-id="b9a7e23" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-9c07d2b elementor-widget elementor-widget-heading"
+														data-id="9c07d2b" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Services</h4>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-8a5fab5 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+														data-id="8a5fab5" data-element_type="widget"
+														data-widget_type="icon-list.default">
+														<div class="elementor-widget-container">
+															<ul class="elementor-icon-list-items">
+																<li class="elementor-icon-list-item">
+																	<a href="#">
+																		<span class="elementor-icon-list-text">Trading</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "core:contact" %}">
+																		<span
+																			class="elementor-icon-list-text">Support</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "userauths:sign-up" %}">
+																		<span
+																			class="elementor-icon-list-text">Register</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "userauths:sign-in" %}">
+																		<span class="elementor-icon-list-text">Login</span>
+																	</a>
+																</li>
+															
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e7d865a"
+												data-id="e7d865a" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-4d1cdc7 elementor-widget elementor-widget-heading"
+														data-id="4d1cdc7" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Information</h4>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-dd694ee elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+														data-id="dd694ee" data-element_type="widget"
+														data-widget_type="icon-list.default">
+														<div class="elementor-widget-container">
+															<ul class="elementor-icon-list-items">
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "core:about" %}">
+																		<span class="elementor-icon-list-text">About</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "core:faq" %}">
+																		<span class="elementor-icon-list-text">Faqs</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "userauths:sign-in" %}">
+																		<span
+																			class="elementor-icon-list-text">Getting Started</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="{% url "core:contact" %}">
+																		<span
+																			class="elementor-icon-list-text">Contact Us</span>
+																	</a>
+																</li>
+																
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b73db0f"
+												data-id="b73db0f" data-element_type="column">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-a5fc2c8 elementor-widget elementor-widget-heading"
+														data-id="a5fc2c8" data-element_type="widget"
+														data-widget_type="heading.default">
+														<div class="elementor-widget-container">
+															<h4 class="elementor-heading-title elementor-size-default">
+																Contact</h4>
+														</div>
+													</div>
+													<div class="elementor-element elementor-element-93f3ab0 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+														data-id="93f3ab0" data-element_type="widget"
+														data-widget_type="icon-list.default">
+														<div class="elementor-widget-container">
+															<ul class="elementor-icon-list-items">
+																<li class="elementor-icon-list-item">
+																	<a >
+																			<span class="elementor-icon-list-text" id="google_translate_element" class="google_t">
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="#">
+																		<span class="elementor-icon-list-text">Email:
+																			support@digitaltradez.com							</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="#">
+																		<span class="elementor-icon-list-text">Website:
+																			digitaltradez.com							</span>
+																	</a>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<a href="#">
+																		<span class="elementor-icon-list-text">111 W
+																			Monroe St., AZ 85003</span>
+																	</a>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-section elementor-top-section elementor-element elementor-element-0c1d683 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+						data-id="0c1d683" data-element_type="section"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aa893a9"
+								data-id="aa893a9" data-element_type="column">
+								<div class="elementor-widget-wrap elementor-element-populated">
+									<div class="elementor-element elementor-element-83589d4 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+										data-id="83589d4" data-element_type="widget"
+										data-widget_type="icon-list.default">
+										<div class="elementor-widget-container">
+											<ul class="elementor-icon-list-items elementor-inline-items">
+												<li class="elementor-icon-list-item elementor-inline-item">
+													<a >
+														<span class="elementor-icon-list-text">© DigitalTradez All Rights Reserved											</span>
+													</a>
+												</li>
+												<li class="elementor-icon-list-item elementor-inline-item">
+													<a href="#">
+														<span class="elementor-icon-list-text">Privacy Policy</span>
+													</a>
+												</li>
+												<li class="elementor-icon-list-item elementor-inline-item">
+													<a href="#">
+														<span class="elementor-icon-list-text">Terms and
+															Conditions</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<style id="ui-popup-style">
+				.ui-popup-background,
+				.ui-popup-wrapper,
+				.ui-popup-overlay {
+					position: fixed;
+					width: 100vw;
+					height: 100vh;
+					top: 0;
+					left: 0;
+				}
+
+				.ui-popup-overlay {
+					background-color: rgba(0, 0, 0, 70%);
+				}
+
+				.ui-popup-wrapper {
+					display: none;
+					z-index: 9999;
+					animation-name: uicoreFadeIn;
+					animation-timing-function: ease-in-out;
+					animation-duration: .4s;
+				}
+
+				.ui-popup-active {
+					display: flex;
+				}
+
+				.ui-popup {
+					display: none;
+					position: relative;
+					width: 100%;
+					max-width: 100vw;
+					max-height: 95vh;
+					animation-duration: .6s;
+					overflow: hidden;
+				}
+
+				.ui-popup-active .ui-popup {
+					display: flex;
+				}
+
+				.ui-popup-close {
+					position: absolute;
+					right: 6px;
+					top: 6px;
+					padding: 10px;
+					font-size: 20px;
+					z-index: 1;
+					line-height: 1;
+					cursor: pointer;
+					transition: all .3s ease-in-out;
+				}
+
+				.ui-popup-wrapper [data-elementor-type=uicore-tb] {
+					overflow: hidden auto;
+					width: 100%;
+				}
+
+				.ui-popup-wrapper [data-elementor-type=uicore-tb] .elementor-section-wrap:not(:empty)+#elementor-add-new-section {
+					display: none;
+				}
+
+				.elementor-add-section:not(.elementor-dragging-on-child) .elementor-add-section-inner {
+					background-color: #fff;
+				}
+			</style>
+			<style id="ui-popup-style-214">
+				.ui-popup-214 {
+					align-items: center;
+					justify-content: center;
+				}
+
+				.ui-popup-214 .ui-popup {
+					min-width: 100vw;
+					min-height: 100vh;
+					animation-name: uicoreFadeIn
+				}
+
+				.ui-popup-214 .ui-popup-close {
+					color: #FFFFFF
+				}
+
+				.ui-popup-214 .ui-popup-close:hover {
+					color: var(--e-global-color-uicore_primary)
+				}
+			</style>
+	
+
+		</div>
+	
+	
+		<div class="uicore-navigation-wrapper uicore-navbar elementor-section elementor-section-boxed uicore-mobile-menu-wrapper
+                ">
+			<nav class="uicore elementor-container">
+				<div class="uicore-branding uicore-mobile">
+					<a href="/" rel="home">
+					<img class="uicore uicore-logo" src="{% static 'logo/logo-2.png' %}"
+							alt="SaaS" />
+					</a>
+				</div>
+				<div class="uicore-branding uicore-desktop">
+				</div>
+				<div class="uicore-mobile-head-right">
+					<button type="button" class="uicore-toggle uicore-ham" aria-label="mobile-menu">
+						<span class="bars">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</span>
+					</button>
+				</div>
+			</nav>
+			<div class="uicore-navigation-content">
+				<div class="uicore-menu-container uicore-nav">
+					<ul data-uils="header-menu" data-uils-title="Navigation Menu" class="uicore-menu">
+						<li
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-130">
+							<a href="/"><span class="ui-menu-item-wrapper">Home</span></a></li>
+						<li
+							class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-68 current_page_item menu-item-132">
+							<a href="{% url "core:about" %}" aria-current="page"><span class="ui-menu-item-wrapper">About
+									Us</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a
+								href="{% url "core:faq" %}"><span class="ui-menu-item-wrapper">Faq's</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a
+								href="{% url "core:contact" %}"><span class="ui-menu-item-wrapper">Contact Us</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
+					<div class="uicore-cta-wrapper">
+						<a href="{% url "userauths:sign-up" %}" target="_self" class="uicore-btn ">
+							<span class="elementor-button-text">
+								Sign Up </span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var uicore_frontend = { 'back': 'Back', 'rtl': '', 'mobile_br': '1025' };
+
+	</script>
+	<link rel="stylesheet" id="ep-advanced-icon-box-css"
+		href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-icon-boxca3f.css' %}" media="all" />
+	<link rel="stylesheet" id="ep-advanced-counter-css"
+		href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-counterca3f.css' %}" media="all" />
+	<link rel="stylesheet" id="ep-font-css" href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/ep-fontca3f.css' %}"
+		media="all" />
+	<link rel="stylesheet" id="ep-review-card-carousel-css"
+		href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/ep-review-card-carouselca3f.css' %}" media="all" />
+	<script src="{% static 'wp-content/uploads/sites/7/uicore-globald5fa.js' %}" id="uicore_global-js"></script>
+	<script id="bdt-uikit-js-extra">
+		var element_pack_ajax_login_config = { "ajaxurl": "https:\/\/outgrid.uicore.co\/saas\/wp-admin\/admin-ajax.php", "language": "en", "loadingmessage": "Sending user info, please wait...", "unknownerror": "Unknown error, make sure access is correct!" };
+		var ElementPackConfig = { "ajaxurl": "https:\/\/outgrid.uicore.co\/saas\/wp-admin\/admin-ajax.php", "nonce": "7134f7b535", "data_table": { "language": { "lengthMenu": "_MENU_ Entries", "info": "_START_ to _END_ of _TOTAL_ entries", "search": "Search :", "sZeroRecords": "No matching records found", "paginate": { "previous": "Previous", "next": "Next" } } }, "contact_form": { "sending_msg": "Sending message please wait...", "captcha_nd": "Invisible captcha not defined!", "captcha_nr": "Could not get invisible captcha response!" }, "mailchimp": { "subscribing": "Subscribing you please wait..." }, "search": { "more_result": "More Results", "search_result": "SEARCH RESULT", "not_found": "not found" }, "elements_data": { "sections": [], "columns": [], "widgets": [] } };
+	</script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.minf14a.js' %}"
+		id="bdt-uikit-js"></script>
+	<script src="{% static 'wp-content/plugins/elementor/assets/js/webpack.runtime.min225e.js' %}"
+		id="elementor-webpack-runtime-js"></script>
+	<script src="{% static 'wp-content/plugins/elementor/assets/js/frontend-modules.min225e.js' %}"
+		id="elementor-frontend-modules-js"></script>
+	<script src="{% static 'wp-includes/js/jquery/ui/core.min3f14.js' %}" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.19.0", "is_static": false, "experimentalFeatures": { "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "additional_custom_breakpoints": true, "e_swiper_latest": true, "block_editor_assets_optimize": true, "ai-layout": true, "landing-pages": true, "e_image_loading_optimization": true, "e_global_styleguide": true }, "urls": { "assets": "https:\/\/outgrid.uicore.co\/saas\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 68, "title": "About%20Us%20%E2%80%93%20SaaS", "excerpt": "", "featuredImage": false } };
+	</script>
+	<script src="{% static 'wp-content/plugins/elementor/assets/js/frontend.min225e.js' %}" id="elementor-frontend-js"></script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-advanced-icon-box.minca3f.js' %}"
+		id="ep-advanced-icon-box-js"></script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/vendor/js/countUp.min1c12.js' %}"
+		id="advanced-counter-js"></script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-advanced-counter.minca3f.js' %}"
+		id="ep-advanced-counter-js"></script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/js/modules/ep-review-card-carousel.minca3f.js' %}"
+		id="ep-review-card-carousel-js"></script>
+	<script src="{% static 'wp-content/plugins/bdthemes-element-pack/assets/js/common/helper.minca3f.js' %}"
+		id="element-pack-helper-js"></script>
+	<script src="{% static 'wp-content/plugins/metform-pro/public/assets/js/repeater9e95.js' %}"
+		id="metform-pro-repeater-js"></script>
+	<script src="//code.tidio.co/a30xwag9pn2s4sgmasfplox4qapc8f3y.js" async></script>
+
+
+</body>
+
+
+</html>
