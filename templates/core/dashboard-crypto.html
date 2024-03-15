@@ -647,21 +647,27 @@
                 </div><!-- end col --> {% endcomment %}
 
                 <div class="col-xxl-4">
-                    <div class="card card-height-100">
+                    <div class="card card-height-100" > 
                         <div class="card-header align-items-center d-flex">
                             <h4 class="card-title mb-0 flex-grow-1">News Feed</h4>
 
                         </div><!-- end card-header -->
-
-                        {% comment %} <div class="cryptohopper-web-widget" data-id="5" data-news_count="4" data-news_length="20">
-                        </div> {% endcomment %}
-                        <style>
-                            .CryptoPanicWidget-header{
-                                display: none;
-                            }
-                        </style>
-                        <a href="https://cryptopanic.com/" target="_blank" data-news_feed="recent" data-bg_color="#FFFFFF" data-text_color="#333333" data-header_bg_color="#30343B" data-header_text_color="#FFFFFF" data-link_color="#405189" data-currencies="BTC,ETH,XRP,USDT,USDC" data-posts_limit="8" class="CryptoPanicWidget">Latest News</a>
-<script src="https://static.cryptopanic.com/static/js/widgets.min.js"></script>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height: 550px;">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on DigitalTradez</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+    {
+    "feedMode": "all_symbols",
+    "isTransparent": false,
+    "displayMode": "regular",
+    "autoSize": true,
+    "colorTheme": "light",
+    "locale": "en"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
                     </div><!-- end card -->
                 </div><!-- end col -->
             </div><!-- end row -->
