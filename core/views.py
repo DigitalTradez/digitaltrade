@@ -105,7 +105,7 @@ def dashboard_view(request):
     user_transactions = Transaction.objects.filter(user=request.user).order_by('-timestamp')
     confirmed_deposits = Deposit.objects.filter(user=user, confirmed=True)
     total_deposit = confirmed_deposits.aggregate(total_amount=Sum('amount'))['total_amount'] or 0
-    plans = Plan.objects.all()
+    plans = Plan.objects.all().order_by('id')
     
     context = {
         "plans": plans,
@@ -140,7 +140,7 @@ def profile_settings_view(request):
 
 @login_required
 def plans_view(request):
-    plans = Plan.objects.all()
+    plans = Plan.objects.all().order_by('id')
     context = {
         "plan": plans
     }
@@ -151,14 +151,10 @@ def plan_detail_view(request, pid):
     if request.user.is_authenticated:
         form = TransactionForm()
         product = Plan.objects.get(pid=pid)
-        products = Plan.objects.filter().exclude(pid=pid)
-        p_image = product.product_image()
     
         context = {
             "form": form,
             "p": product,
-            "p_image": p_image,
-            "products": products,
 
         }
     
