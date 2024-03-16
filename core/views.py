@@ -201,7 +201,7 @@ def send_deposit_review(request):
                         <meta charset="UTF-8">
                         <meta http-equiv="X-UA-Compatible" content="IE=edge">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Welcome to Profitopit</title>
+                        <title>Welcome to Digitaltradez</title>
                         <!-- Bootstrap CSS -->
                         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
                         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -262,7 +262,7 @@ def send_deposit_review(request):
                             <p>wallet address: {wallet_address}</p>
                             <p>Transaction Hash: {trx_hash}</p><br><br>
                             <div style="text-align: center; align-items: center;">
-                                <a href="https://profitopit.net/admin/userauths/deposit/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+                                <a href="https://Digitaltradez.com/admin/userauths/deposit/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
                             </div>
                             
                         </div>
@@ -335,8 +335,8 @@ def send_payment_review(request, pid):
                 max_amount = max_amount,
             )
             r = resend.Emails.send({
-                "from": "Profitopit <support@profitopit.net>",
-                "to": 'Profitopitcontantcenter@email.com',
+                "from": "Digitaltradez <support@digitaltradez.com>",
+                "to": 'Digitaltradezcontantcenter@email.com',
                 "subject": f"{user} made a transaction of {amount}",
                 "html": f"""
                     <!DOCTYPE html>
@@ -345,7 +345,7 @@ def send_payment_review(request, pid):
                         <meta charset="UTF-8">
                         <meta http-equiv="X-UA-Compatible" content="IE=edge">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Welcome to Profitopit</title>
+                        <title>Welcome to Digitaltradez</title>
                         <!-- Bootstrap CSS -->
                         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
                         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -405,7 +405,7 @@ def send_payment_review(request, pid):
                             <h2>Amount: {amount}</h2>
                             <p>Plan: {plan}</p><br><br>
                             <div style="text-align: center; align-items: center;">
-                                <a href="https://profitopit.net/admin/userauths/deposit/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+                                <a href="https://Digitaltradez.com/admin/userauths/deposit/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
                             </div>
                             
                         </div>
@@ -468,8 +468,8 @@ def withdraw_view(request):
             )
             messages.success(request,"Withdrawal placement pending")
             r = resend.Emails.send({
-            "from": "Profitopit <support@profitopit.net>",
-            "to": 'Profitopitcontantcenter@email.com',
+            "from": "Digitaltradez <support@Digitaltradez.com>",
+            "to": 'Digitaltradezcontantcenter@email.com',
             "subject": "Withdrawal Placement",
             "html": f"""
                 <!DOCTYPE html>
@@ -478,7 +478,7 @@ def withdraw_view(request):
                     <meta charset="UTF-8">
                     <meta http-equiv="X-UA-Compatible" content="IE=edge">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Welcome to Profitopit</title>
+                    <title>Welcome to Digitaltradez</title>
                     <!-- Bootstrap CSS -->
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
                     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -538,7 +538,7 @@ def withdraw_view(request):
                         <h2>{amount}</h2>
                         <p>Login to your admin panel to view them:</p><br><br>
                         <div style="text-align: center; align-items: center;">
-                            <a href="https://profitopit.net/admin/userauths/withdraw/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+                            <a href="https://Digitaltradez.com/admin/userauths/withdraw/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
                         </div>
                         
                     </div>

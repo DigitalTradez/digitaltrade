@@ -1,6 +1,6 @@
 
 // function updateUserData() {
-//     fetch('https://www.profitopit.com/get_user_data/')
+//     fetch('https://www.Digitaltradez.com/get_user_data/')
 //         .then(response => response.json())
 //         .then(data => {
 //             document.getElementById('total_invested').innerText = data.total_invested;
@@ -11,7 +11,7 @@
 // setInterval(updateUserData, 7000);
 
 // function updateTotalDeposit() {
-//     fetch('https://www.profitopit.com/get_total_deposit/')
+//     fetch('https://www.Digitaltradez.com/get_total_deposit/')
 //         .then(response => response.json())
 //         .then(data => {
 //             document.getElementById('total_deposits').innerText = data.total_deposits;
@@ -24,7 +24,7 @@
 // setInterval(updateTotalDeposit, 10000)
 
 // function triggerDailyTask() {
-//     fetch('https://www.profitopit.com/trigger_daily_task/', {
+//     fetch('https://www.Digitaltradez.com/trigger_daily_task/', {
 //         method: 'GET',
 //     })
 //     .then(response => response.json());
