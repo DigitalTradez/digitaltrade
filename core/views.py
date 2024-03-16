@@ -54,7 +54,7 @@ def index(request):
     last_plan = Plan.objects.last()
     
     # Get the other three objects excluding the last one
-    other_plans = Plan.objects.exclude(pk=last_plan.pk)
+    other_plans = Plan.objects.exclude(pk=last_plan.pk).order_by('id')
     names_json = json.dumps(names)
     context = {
         "plans": other_plans,
@@ -72,7 +72,7 @@ def pricing(request):
     last_plan = Plan.objects.last()
     
     # Get the other three objects excluding the last one
-    other_plans = Plan.objects.exclude(pk=last_plan.pk)
+    other_plans = Plan.objects.exclude(pk=last_plan.pk).order_by('id')
     context = {
         "plans": other_plans,
         "last_plan": last_plan,
