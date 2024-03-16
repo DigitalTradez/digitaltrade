@@ -69,7 +69,15 @@ def index(request):
     return render(request, "core/index.html",context)
 
 def pricing(request):
-    return render(request,"core/pricing/index.html")
+    last_plan = Plan.objects.last()
+    
+    # Get the other three objects excluding the last one
+    other_plans = Plan.objects.exclude(pk=last_plan.pk)
+    context = {
+        "plans": other_plans,
+        "last_plan": last_plan,
+    }
+    return render(request,"core/pricing/index.html", context)
 def faq(request):
     return render(request,"core/pricing/faq.html")
 

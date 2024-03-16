@@ -12,7 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
 	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
 	<style>
 		.ui-link-helper svg {
 			width: 22px;
@@ -487,6 +494,10 @@
 		a .VIpgJd-ZVi9od-l4eHX-hSRGPd{
 			display: none;
 		}
+		.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+			display: none;
+		}
+		
     </style>
 	<div class="uicore-body-content">
 		<div id="uicore-page">
@@ -523,6 +534,11 @@
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
 										<a href="{% url "core:contact" %}"><span class="ui-menu-item-wrapper">Contact
 												Us</span></a></li>
+									
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+										<a href="{% url "core:pricing" %}"><span class="ui-menu-item-wrapper">Plans</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+										<span class="elementor-icon-list-text" id="google_translate_element" class="google_t"></li>
 								</ul>
 							</div>
 							<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
@@ -986,14 +1002,7 @@
 		id="element-pack-helper-js"></script>
 	<script src="{% static 'wp-content/plugins/metform-pro/public/assets/js/repeater9e95.js' %}"
 		id="metform-pro-repeater-js"></script>
-		<script type="text/javascript">
-			function googleTranslateElementInit() {
-				new google.translate.TranslateElement(
-					{pageLanguage: 'en'},
-					'google_translate_element'
-				);
-			}
-		</script>
+		
 	<script src="https://cdn.lordicon.com/lordicon.js"></script>
 
     <script src="//code.tidio.co/a30xwag9pn2s4sgmasfplox4qapc8f3y.js" async></script>

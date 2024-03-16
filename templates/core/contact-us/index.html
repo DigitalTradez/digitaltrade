@@ -1,4 +1,5 @@
 {% load static %}
+{% load humanize %}
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -11,7 +12,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {pageLanguage: 'en'},
+          'google_translate_element'
+        );
+      }
+    </script>
 
 
     <style>
@@ -127,6 +137,30 @@
         }
       }
     </style>
+    <style>
+      .goog-te-combo{
+          border: #fff;
+      }
+      .VIpgJd-ZVi9od-ORHb-OEVmcd{
+          display: none;
+      }
+      .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+          display: none;
+      }
+      
+      .VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate{
+          
+      }
+      .goog-te-combo {
+        height: 25px; 
+        border: 1px solid #0b244b;
+        border-radius: 3px;
+        font-family: 'Poppins', sans-serif;
+      }
+      .js-darkmode-btn{
+          transform: translateX(45px);
+      }
+  </style>
     <title>Contact Us &#8211; DigitalTradez</title>
     <meta name="robots" content="max-image-preview:large" />
     <link
@@ -559,6 +593,15 @@
                         ><span class="ui-menu-item-wrapper">Contact Us</span></a
                       >
                     </li>
+                    <li
+                      class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-110 current_page_item menu-item-131"
+                    >
+                      <a href="{% url "core:pricing" %}" aria-current="page"
+                        ><span class="ui-menu-item-wrapper">Plans</span></a
+                      >
+                    </li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+                      <span class="elementor-icon-list-text" id="google_translate_element" class="google_t"></li>
                   </ul>
                 </div>
                 <div
@@ -1289,11 +1332,7 @@
                           data-widget_type="icon-list.default">
                           <div class="elementor-widget-container">
                             <ul class="elementor-icon-list-items">
-                              <li class="elementor-icon-list-item">
-                                <a >
-                                    <span class="elementor-icon-list-text" id="google_translate_element" class="google_t">
-                                </a>
-                              </li>
+                              
                               <li class="elementor-icon-list-item">
                                 <a href="#">
                                   <span class="elementor-icon-list-text">Email:
@@ -1543,6 +1582,13 @@
                   ><span class="ui-menu-item-wrapper">Contact Us</span></a
                 >
               </li>
+              <li
+              class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-110 current_page_item menu-item-131"
+            >
+              <a href="{% url "core:pricing" %}" aria-current="page"
+                ><span class="ui-menu-item-wrapper">Plans</span></a
+              >
+            </li>
             </ul>
           </div>
           <div

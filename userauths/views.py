@@ -190,9 +190,10 @@ def login_view(request):
         password = request.POST.get('password')
 
         try:
+            current_user = User.objects.get(request.user.pk)
             user = User.objects.get(email=email)
             user = authenticate(request, email=email, password=password)
-            if user is not None:
+            if user is not None and current_user:
                 login(request, user)
                 perform_daily_task()
                 messages.success(request, "Successfully logged in.")

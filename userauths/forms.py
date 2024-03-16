@@ -58,6 +58,7 @@ def validate_referral_code(value):
 
 class UserRegisterForm(UserCreationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "Username","class": "form-control"}))
+    contact = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "Phone Number","class": "form-control"}))
     email = forms.EmailField(widget=forms.EmailInput(attrs={"placeholder": "Email", "class": "form-control"}))
     address = forms.ChoiceField(choices=sorted_countries, widget=forms.Select(attrs={"placeholder": "Country", "class": "form-control"}))
     btc_address = forms.CharField(widget=forms.TextInput(attrs={"placeholder": "BTC address", "class": "form-control","id":"password-field"}), required=False)
@@ -69,7 +70,7 @@ class UserRegisterForm(UserCreationForm):
     
     class Meta:
         model = User
-        fields = ['username','email','address','btc_address','eth_address','usdt_address','referred']
+        fields = ['username','contact','email','address','btc_address','eth_address','usdt_address','referred']
 
 class TransactionForm(forms.ModelForm):
     user = forms.EmailField(initial='Default Value',widget=forms.TextInput(attrs={"placeholder": "", "class": "form-control",'readonly': 'readonly'}))

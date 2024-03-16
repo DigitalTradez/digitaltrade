@@ -1,5 +1,6 @@
 
 {% load static %}
+{% load humanize %}
 <!doctype html>
 <html lang="en-US">
 
@@ -11,9 +12,19 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title>FAQs &#8211; DigitalTradez</title>
 	<meta name="robots" content="max-image-preview:large" />
+	
 	<link rel="alternate" type="application/rss+xml" title="DigitalTradez &raquo; Comments Feed"
 		href="/faq" />
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement(
+					{pageLanguage: 'en'},
+					'google_translate_element'
+				);
+			}
+		</script>
 	<link rel="stylesheet" id="bdt-uikit-css"
 		href="{% static 'wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikitf14a.css' %}" media="all" />
 	<link rel="stylesheet" id="ep-helper-css"
@@ -30,6 +41,31 @@
 			vertical-align: -0.1em !important;
 			background: none !important;
 			padding: 0 !important;
+		}
+	</style>
+	<style>
+		.goog-te-combo{
+			border: #fff;
+		}
+		.VIpgJd-ZVi9od-ORHb-OEVmcd{
+			display: none;
+		}
+		a .VIpgJd-ZVi9od-l4eHX-hSRGPd{
+			display: none;
+		}
+		.VIpgJd-ZVi9od-l4eHX-hSRGPd{
+			display: none;
+		}
+		
+		
+		.goog-te-combo {
+		  height: 25px; 
+		  border: 1px solid #0b244b;
+		  border-radius: 3px;
+		  font-family: 'Poppins', sans-serif;
+		}
+		.js-darkmode-btn{
+			transform: translateX(45px);
 		}
 	</style>
 	<style id="classic-theme-styles-inline-css">
@@ -147,6 +183,10 @@
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
 										<a href="{% url "core:contact" %}"><span class="ui-menu-item-wrapper">Contact
 												Us</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+										<a href="{% url "core:pricing" %}"><span class="ui-menu-item-wrapper">Plans</span></a></li>
+												<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131">
+													<span class="elementor-icon-list-text" id="google_translate_element" class="google_t"></li>
 								</ul>
 							</div>
 							<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">
@@ -862,11 +902,7 @@ Solana</div>
 														data-widget_type="icon-list.default">
 														<div class="elementor-widget-container">
 															<ul class="elementor-icon-list-items">
-																<li class="elementor-icon-list-item">
-																	<a >
-																			<span class="elementor-icon-list-text" id="google_translate_element" class="google_t">
-																	</a>
-																</li>
+																
 																<li class="elementor-icon-list-item">
 																	<a href="#">
 																		<span class="elementor-icon-list-text">Email:
@@ -1063,6 +1099,9 @@ Solana</div>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a
 								href="{% url "core:contact" %}"><span class="ui-menu-item-wrapper">Contact Us</span></a>
 						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a
+							href="{% url "core:pricing" %}"><span class="ui-menu-item-wrapper">Plans</span></a>
+					</li>
 					</ul>
 				</div>
 				<div class="uicore uicore-extra" data-uils="header_extra" data-uils-title="Header Extras">

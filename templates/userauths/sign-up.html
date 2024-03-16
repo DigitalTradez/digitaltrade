@@ -95,12 +95,16 @@
                   <form id="registerForm" method="POST">
                     {% csrf_token %}
                     <div class="mb-3">
-                      <label class="form-label text-dark fw-600" for="emailAddress">Email Address</label>
+                      
                       {{form.email}}
                     </div>
                     <div class="mb-3">
                       <label class="form-label text-dark fw-600" for="emailAddress">Username</label>
                       {{form.username}}
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label text-dark fw-600" for="emailAddress">Phone</label>
+                      {{form.contact}}
                     </div>
                     <div class="mb-3">
                       <label class="form-label text-dark fw-600" for="emailAddress">Country</label>
