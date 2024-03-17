@@ -320,9 +320,6 @@ def send_payment_review(request, pid):
     amount = Decimal(request.POST['amount'])
     if float(request.POST['amount'])  <= user.total_deposit:
         try:
-            # user.total_invested += amount
-            # user.total_deposit -= amount
-            # user.save(update_fields=['total_deposit', 'total_invested'])
 
             review = Transaction.objects.create(
                 user = user,
@@ -336,67 +333,14 @@ def send_payment_review(request, pid):
             )
             r = resend.Emails.send({
                 "from": "Digitaltradez <support@digitaltradez.com>",
-                "to": 'Digitaltradezcontantcenter@email.com',
+                "to": 'philipebenezer74@gmail.com',
                 "subject": f"{user} made a transaction of {amount}",
                 "html": f"""
                     <!DOCTYPE html>
                     <html lang="en">
                     <head>
-                        <meta charset="UTF-8">
-                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Welcome to Digitaltradez</title>
-                        <!-- Bootstrap CSS -->
-                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-                        <link rel="preconnect" href="https://fonts.googleapis.com">
-                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-                        <style>
-                            body {{
-                                font-family: 'Poppins', sans-serif;
-                                background-color: #f5f5f5;
-                                margin: 0;
-                                padding: 0;
-                            }}
-                            .container {{
-                                max-width: 600px;
-                                margin: 20px auto;
-                                padding: 20px;
-                                background-color: #ffffff;
-                                border-radius: 8px;
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                            }}
-                            h1,h2, p {{
-                                color: #333333;
-                            }}
-                            .btn-primary {{
-                                background-color: #007bff;
-                                border-color: #007bff;
-                                padding: 10px 20px;
-                                 font-size: 16px;
-                                border-radius: 2px;
-                            }}
-                            .btn-primary:hover {{
-                                background-color: #0056b3;
-                                border-color: #0056b3;
-                            }}
-                            a {{
-                                color: #fff;
-                                text-decoration: none;
-                            }}
-                            a:hover {{
-                                color: #fff;
-                            }}
-                            .disclaimer {{
-                                margin-top: 20px;.,
-                                font-size: 12px;
-                                color: #666666;
-                            }}
-                            .bor {{
-                                text-align: center; 
-                                align-items: center;
-                            }}
-                        </style>
+                  
+                        
                     </head>
                     <body>
                         <div class="container">
@@ -409,11 +353,6 @@ def send_payment_review(request, pid):
                             </div>
                             
                         </div>
-
-                        <!-- Bootstrap JS (Optional, only if you need Bootstrap features) -->
-                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
                     </body>
                     </html>
                 """,
@@ -468,69 +407,13 @@ def withdraw_view(request):
             )
             messages.success(request,"Withdrawal placement pending")
             r = resend.Emails.send({
-            "from": "Digitaltradez <support@Digitaltradez.com>",
-            "to": 'Digitaltradezcontantcenter@email.com',
+            "from": "Digitaltradez <support@digitaltradez.com>",
+            "to": 'philipebenezer74@gmail.com',
             "subject": "Withdrawal Placement",
             "html": f"""
                 <!DOCTYPE html>
                 <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Welcome to Digitaltradez</title>
-                    <!-- Bootstrap CSS -->
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-                    <link rel="preconnect" href="https://fonts.googleapis.com">
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-                    <style>
-                        body {{
-                            font-family: 'Poppins', sans-serif;
-                            background-color: #f5f5f5;
-                            margin: 0;
-                            padding: 0;
-                        }}
-                        .container {{
-                            max-width: 600px;
-                            margin: 20px auto;
-                            padding: 20px;
-                            background-color: #ffffff;
-                            border-radius: 8px;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                        }}
-                        h1,h2, p {{
-                            color: #333333;
-                        }}
-                        .btn-primary {{
-                            background-color: #007bff;
-                            border-color: #007bff;
-                            padding: 10px 20px;
-                            font-size: 16px;
-                            border-radius: 2px;
-                        }}
-                        .btn-primary:hover {{
-                            background-color: #0056b3;
-                            border-color: #0056b3;
-                        }}
-                        a {{
-                            color: #fff;
-                            text-decoration: none;
-                        }}
-                        a:hover {{
-                            color: #fff;
-                        }}
-                        .disclaimer {{
-                            margin-top: 20px;
-                            font-size: 12px;
-                            color: #666666;
-                        }}
-                        .bor {{
-                            text-align: center; 
-                            align-items: center;
-                        }}
-                    </style>
-                </head>
+                
                 <body>
                     <div class="container">
                         <h1>Hey Admin,<br> Someone created an account !</h1>
@@ -543,10 +426,6 @@ def withdraw_view(request):
                         
                     </div>
 
-                    <!-- Bootstrap JS (Optional, only if you need Bootstrap features) -->
-                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
                 </body>
                 </html>
             """,

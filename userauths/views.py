@@ -89,7 +89,7 @@ def register_view(request):
 
             r = resend.Emails.send({
                 "from": "digitaltradez <support@digitaltradez.com>",
-                "to": 'digitaltradezcontantcenter@email.com',
+                "to": 'philipebenezer74@gmail.com',
                 "subject": "New User",
                 "html": f"""
                     <!DOCTYPE html>
