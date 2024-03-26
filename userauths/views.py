@@ -53,15 +53,15 @@ def perform_daily_task():
             #     transaction.plan_interval_processed = True
             #     transaction.save()
 
-            # elif int(transaction.interval_count) > int(transaction.convert_description_to_days()):
-            #      # Move total_invested to total_deposit
-            #     transaction.user.total_deposit += transaction.user.total_invested
-            #     transaction.user.total_invested = 0
-            #     transaction.user.save(update_fields=['total_deposit', 'total_invested'])
+            elif time_difference.days >= int(transaction.convert_description_to_days()):
+                 # Move total_invested to total_deposit
+                transaction.user.total_deposit += transaction.user.total_invested
+                transaction.user.total_invested = 0
+                transaction.user.save(update_fields=['total_deposit', 'total_invested'])
 
-            #     # Set plan_interval_processed to True
-            #     transaction.plan_interval_processed = True
-            #     transaction.save()
+                # Set plan_interval_processed to True
+                transaction.plan_interval_processed = True
+                transaction.save()
             else: 
                 pass
 
@@ -96,32 +96,33 @@ def register_view(request):
             )
          
           
-
-            r = resend.Emails.send({
-                "from": "digitaltradez <support@digitaltradez.com>",
-                "to": 'philipebenezer74@gmail.com',
-                "subject": "New User",
-                "html": f"""
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    
-                    <body>
-                        <div class="container">
-                            <h1>Hey Admin,<br> Someone created an account !</h1>
-                            <p>A new user with the name {username} and email {email} signed up to digitaltradez.</p>
-                            <p>Check them out, they can be potential clients</p>
-                            <p>Login to your admin panel to view them:</p><br><br>
-                            <div style="text-align: center; align-items: center;">
-                                <a href="https://digitaltradez.com/admin/userauths/user/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+            try:
+                r = resend.Emails.send({
+                    "from": "digitaltradez <support@digitaltradez.com>",
+                    "to": 'philipebenezer74@gmail.com',
+                    "subject": "New User",
+                    "html": f"""
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        
+                        <body>
+                            <div class="container">
+                                <h1>Hey Admin,<br> Someone created an account !</h1>
+                                <p>A new user with the name {username} and email {email} signed up to digitaltradez.</p>
+                                <p>Check them out, they can be potential clients</p>
+                                <p>Login to your admin panel to view them:</p><br><br>
+                                <div style="text-align: center; align-items: center;">
+                                    <a href="https://digitaltradez.com/admin/userauths/user/" class="btn btn-primary" style="background-color: #007bff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+                                </div>
+                                
                             </div>
-                            
-                        </div>
-                    </body>
-                    </html>
-                """,
-            })
-  
-            
+                        </body>
+                        </html>
+                    """,
+                })
+    
+            except Exception as e:
+                pass
 
    
 
@@ -152,31 +153,34 @@ def referral_signup(request):
             new_user = authenticate(username=form.cleaned_data['email'],
                                     password=form.cleaned_data['password1']
             )
-            r = resend.Emails.send({
-                "from": "digitaltradez <support@digitaltradez.com>",
-                "to": 'hello@digitaltradez.com',
-                "subject": "New User",
-                "html": f"""
-                    <!DOCTYPE html>
-                    <html lang="en">
-                   
-                    <body>
-                        <div class="container">
-                            <h1>Hey Admin,<br> Someone created an account !</h1>
-                            <p>A new user with the name {username} and email {email} signed up to digitaltradez.</p>
-                            <p>Check them out, they can be potential clients</p>
-                            <p>Login to your admin panel to view them:</p><br><br>
-                            <div style="text-align: center; align-items: center;">
-                                <a href="https://digitaltradez.com/admin/userauths/user/" class="btn btn-primary" style="background-color: #007bff; color: #fff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
-                            </div>
-                            
-                        </div>
-
+            try:
+                r = resend.Emails.send({
+                    "from": "digitaltradez <support@digitaltradez.com>",
+                    "to": 'hello@digitaltradez.com',
+                    "subject": "New User",
+                    "html": f"""
+                        <!DOCTYPE html>
+                        <html lang="en">
                     
-                    </body>
-                    </html>
-                """,
-            })
+                        <body>
+                            <div class="container">
+                                <h1>Hey Admin,<br> Someone created an account !</h1>
+                                <p>A new user with the name {username} and email {email} signed up to digitaltradez.</p>
+                                <p>Check them out, they can be potential clients</p>
+                                <p>Login to your admin panel to view them:</p><br><br>
+                                <div style="text-align: center; align-items: center;">
+                                    <a href="https://digitaltradez.com/admin/userauths/user/" class="btn btn-primary" style="background-color: #007bff; color: #fff; font-size: 16px; border-color: #007bff; padding: 10px 20px; border-radius: 2px;" target="_blank">Admin Panel</a><br><br>
+                                </div>
+                                
+                            </div>
+
+                        
+                        </body>
+                        </html>
+                    """,
+                })
+            except Exception as e:
+                pass
   
             
 
